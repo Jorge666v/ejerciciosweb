@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuatro Cajas dentro de un Contenedor</title>
+    <style>
+        /* Estilos para el contenedor principal */
+        .contenedor {
+            width: 80%;
+            padding: 20px;
+            border: 2px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; /* Centramos el contenedor */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+            gap: 10px; /* Espacio entre las cajas */
+            box-sizing: border-box; /* Para que el ancho incluya el borde y el relleno */
+        }
+
+        /* Estilos para cada caja */
+        .caja {
+            width: 100%; /* Ocupa el ancho completo de la columna */
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 130px; /* Ajuste para centrar el texto verticalmente */
+            color: #000;
+            font-family: 'Times New Roman', Times, serif; /* Fuente Times New Roman */
+            font-weight: bold; /* Texto en negritas */
+            font-size: 20px; /* Tamaño de la fuente */
+            box-sizing: border-box; /* Para que el ancho incluya el borde y el relleno */
+        }
+
+        /* Colores de fondo para cada caja */
+        .caja1 {
+            background-color: #FF5733; /* Color de fondo específico */
+        }
+        .caja2 {
+            background-color: #33B5FF; /* Color de fondo específico */
+        }
+        .caja3 {
+            background-color: #33FF57; /* Color de fondo específico */
+        }
+        .caja4 {
+            background-color: #FFC300; /* Color de fondo específico */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja caja1">Caja 1</div>
+        <div class="caja caja2">Caja 2</div>
+        <div class="caja caja3">Caja 3</div>
+        <div class="caja caja4">Caja 4</div>
+    </div>
+</body>
+</html>
